@@ -3,10 +3,10 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.dhenton9000.spring.secure.demo</groupId>
-    <artifactId>secure.demo</artifactId>
+    <artifactId>secure-demo</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>war</packaging>
-    <name>Secure Demo</name>
+    <name>secure-demo</name>
     <description>Secure Demonstration App</description>
     <build>
         <sourceDirectory>${basedir}/src/main/java</sourceDirectory>
@@ -147,9 +147,14 @@
                             
                          
                             <systemProperties>
-                                <systemProperty>
-                                    <key>DATABASE_URL</key>
-                                    <value>postgres://test:test@localhost:5433/jdatabase</value>
+                              
+                                 <systemProperty>
+                                    <key>DEMO_USERNAME</key>
+                                    <value>demo</value>
+                                </systemProperty>
+                                 <systemProperty>
+                                    <key>DEMO_PASSWORD</key>
+                                    <value>password</value>
                                 </systemProperty>
                             </systemProperties>
                            

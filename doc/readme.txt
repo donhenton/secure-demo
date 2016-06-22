@@ -21,7 +21,7 @@ see  src/main/webapp/WEB-INF/spring/spring-security.xml for users and passwords
 
 ### running from the command line: (java 7)
 ```
-java -jar target/dependency/jetty-runner.jar target/SpringMVC3-app-1.0-SNAPSHOT.war
+java -DDEMO_USERNAME=test -DDEMO_PASSWORD=test -jar target/dependency/jetty-runner.jar target/secure-demo-1.0-SNAPSHOT.war  
 
 
 /Library/Java/JavaVirtualMachines/jdk1.7.0_51.jdk/Contents/Home/bin/java  -jar target/dependency/jetty-runner.jar target/SpringMVC3-app-1.0-SNAPSHOT.war
